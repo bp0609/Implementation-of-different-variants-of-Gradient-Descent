@@ -1,0 +1,2 @@
+# Implementation-of-different-variants-of-Gradient-Descent
+This repository contains implementations of various gradient descent algorithms, including stochastic gradient descent, full-batch gradient descent, and gradient descent with momentum. It also includes visualizations of the convergence process for each variant, facilitating comparison and better understanding of their performance and behavior.
