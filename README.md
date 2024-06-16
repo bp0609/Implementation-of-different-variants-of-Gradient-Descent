@@ -33,6 +33,7 @@ y = f_x + eps
 ```
 <img src="plots/D2 contour_surface.png" width="600">
 <br><br><br>
+
 ## Implementation of full-batch and stochastic gradient descent. 
 Implement FBGD and SGD. Find the average number of steps it takes to converge to an $\epsilon$-neighborhood of the minimizer for both datasets. Visualize the convergence process for 15 epochs. Choose $\epsilon = 0.001$ for convergence criteria. Which dataset and optimizer takes a larger number of epochs to converge, and why? Show the contour plots for different epochs (or show an animation/GIF) for visualisation of optimisation process. Also, make a plot for Loss v/s epochs. <br><br>
 
@@ -157,6 +158,7 @@ def stochastic_gradient_descent(X, y, initial_theta=-1, learning_rate=0.01, epsi
 
      - Number of epochs taken by FBGD to converge =  452
 
+  ---
     We know that FBGD and SGD are two optimization algorithms used to minimize the loss function.
 
     We can observe that SGD converges very fast compared to FBGD in both the datasets. This is because in FBGD, the entire dataset is used to compute the gradient of the loss function with respect to the model parameters in each iteration. This means that FBGD calculates the average gradient across the entire dataset. In contrast, SGD uses only a single randomly chosen data point to compute the gradient at each iteration. 
