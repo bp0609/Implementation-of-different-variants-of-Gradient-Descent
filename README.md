@@ -167,12 +167,12 @@ def stochastic_gradient_descent(X, y, initial_theta=-1, learning_rate=0.01, epsi
 
     Near the global minima it is seen that the gradient vectors of individual loss function are along different direction and taking average results in very smaller updation of theta's.
 
-    <img src="plots/D1 lossVsepochs.png" width=400>
-    <br>
+<img src="plots/D1 lossVsepochs.png" width=400>
+<br>
 
-    <img src="plots/D2 lossVsepochs.png" width=400>
+<img src="plots/D2 lossVsepochs.png" width=400>
     
-    We also see that dataset1 $(y=100x+1)$ converges fast than dataset2 $(y=3x+4)$ in this case. But the actual convergence speed depends on the initialisation and learning rate that we use for before applying gradient descent.
+We also see that dataset1 $(y=100x+1)$ converges fast than dataset2 $(y=3x+4)$ in this case. But the actual convergence speed depends on the initialisation and learning rate that we use for before applying gradient descent.
 
 ## Part 2 Momentum
 ------- 
@@ -201,14 +201,17 @@ We can observe that momentum gradient descent converges faster than normal gradi
     Momentum effectively acts as an adaptive step size in the optimization process. When the gradients consistently point in the same direction, momentum accelerates convergence by increasing the step size. When the gradients change direction, momentum helps to smooth out the updates, preventing overshooting.
 
 Updation in Gradient Descent
-
-$$ {\theta}_{i}={\theta}_{i-1} - {\alpha} \frac{\partial L}{\partial \theta } $$
-
+```math
+{\theta}_{i}={\theta}_{i-1} - {\alpha} \frac{\partial L}{\partial \theta} 
+```
 Updation in Momentum Gradient Descent 
 $$newchange={\alpha} \frac{\partial L}{\partial \theta }+{\beta}*change $$
-$$ {\theta}_{i}={\theta}_{i-1} - newchange $$
-$$=> {\theta}_{i}={\theta}_{i-1} - ({\alpha} \frac{\partial L}{\partial \theta }+{\beta}*change)$$
-
+```math
+{\theta}_{i}={\theta}_{i-1} - newchange
+```
+```math
+=> {\theta}_{i}={\theta}_{i-1} - ({\alpha} \frac{\partial L}{\partial \theta }+{\beta}*change)
+```
 <img src="plots/D1 variation of theta.png" width = 800, hight = 800>
 
 <img src="plots/D2 variation of theta.png" width = 800, hight = 800><br><br>
